@@ -1,0 +1,118 @@
+/* General Page Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Logo container */
+.logo {
+  position: fixed; /* keeps it in place */
+  top: 30px;       /* adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 180px;    /* size of the logo */
+  z-index: 10;
+}
+
+/* Logo image */
+.logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+
+  /* Subtle floating + glowing animation */
+  animation: logoPulse 3s infinite ease-in-out;
+}
+
+/* Keyframes for animation */
+@keyframes logoPulse {
+  0% {
+    transform: scale(1) translateY(0);
+    filter: drop-shadow(0 0 5px #00e1ff);
+  }
+  50% {
+    transform: scale(1.05) translateY(-5px);
+    filter: drop-shadow(0 0 15px #00f7ff);
+  }
+  100% {
+    transform: scale(1) translateY(0);
+    filter: drop-shadow(0 0 5px #00e1ff);
+  }
+}
+
+/* Login container */
+.login-container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 300px;
+  margin-top: 180px; /* Push form below the logo */
+}
+
+/* Heading */
+.login-container h2 {
+  margin-bottom: 10px;
+  font-size: 22px;
+  color: #004d66;
+}
+
+/* Message (success or error) */
+#loginMessage {
+  font-size: 14px;
+  color: red;
+  margin-bottom: 15px;
+}
+
+/* Input fields */
+.login-container input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #e6f7ff;
+  font-size: 14px;
+  outline: none;
+}
+
+/* Button */
+.login-container button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background: #004d66;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-container button:hover {
+  background: #006680;
+}
+
+/* Links */
+.links {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.links a {
+  color: #004d66;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}

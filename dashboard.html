@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gluvia | Dashboard</title>
+    <link rel="stylesheet" href="header_style.css">
+    <link rel="stylesheet" href="dashboard_style.css"> 
+</head>
+<body>
+  
+  <!-- The global header will be loaded here -->
+  <div id="header-placeholder"></div>
+
+  <!-- === NEW DASHBOARD CONTENT AREA === -->
+  <main class="container">
+
+    <!-- Left side: User info cards stacked vertically -->
+    <div class="cards">
+        <div class="card">
+            <h2>Welcome Back!</h2>
+            <!-- This will be dynamically filled in later -->
+            <p id="welcome-name">Hi, User</p> 
+        </div>
+        <div class="card">
+            <h2>Doctor ID</h2>
+            <p>DR10234</p>
+        </div>
+        <div class="card">
+            <h2>Specialization</h2>
+            <p>Endocrinology</p>
+        </div>
+        <div class="card">
+            <h2>Total Patients Assigned</h2>
+            <p>45</p>
+        </div>
+        <div class="card">
+            <h2>Years Of Experience</h2>
+            <p>12</p>
+        </div>
+    </div>
+
+    <!-- Right side: User profile picture -->
+    <div class="profile-pic">
+        <img src="doc.jpg" alt="User Profile">
+    </div>
+
+  </main>
+
+  <script src="header_script.js"></script>
+  <script src="dashboard_script.js"></script> 
+</body>
+</html>
